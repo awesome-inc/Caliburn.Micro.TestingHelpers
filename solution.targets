@@ -78,7 +78,12 @@
 		<DeployFailOnBuildNotSet>false</DeployFailOnBuildNotSet>
 	</PropertyGroup>
 	-->
-
+  
+  <!--## Specifying your repository token for coveralls.io -->
+	<PropertyGroup>
+		<CoverAllsToken>haLjyYLGTXHpDwMk2POh2FRmG9iYj1WCi</CoverAllsToken>
+	</PropertyGroup>
+  
 	<!-- ## Automatically import project-specific overrides (place this last) -->
 	<Import Project="$(ProjectDir)\$(ProjectName).targets" Condition="Exists('$(ProjectDir)\$(ProjectName).targets')"/>
 
