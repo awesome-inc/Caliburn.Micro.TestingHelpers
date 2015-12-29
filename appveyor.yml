@@ -18,7 +18,7 @@
     - ps: gitversion /l console /output buildserver
     - nuget setapikey %apiKey% -Verbosity quiet
   build_script:
-    - build.bat Caliburn.Micro.TestingHelpers\Caliburn.Micro.TestingHelpers.csproj /t:Deploy /v:m
+    - build.bat /t:CoverageUpload;Deploy /v:m
 
 
 # all other branches
@@ -33,4 +33,4 @@
   before_build:
     - ps: gitversion /l console /output buildserver
   build_script:
-    - build.bat Caliburn.Micro.TestingHelpers\Caliburn.Micro.TestingHelpers.csproj /t:Deploy /v:m
+    - build.bat /t:CoverageUpload;Package /v:m
