@@ -7,7 +7,17 @@
 		</Compile>
 	</ItemGroup>
 	
-	<!-- ## Uncomment to customize targets to customize test ##
+  <PropertyGroup>
+    <UseNUnit3>true</UseNUnit3>
+    <NUnitResultFormat>nunit3</NUnitResultFormat>
+  </PropertyGroup>
+  
+	<!-- ## Allowing local deployment (non build server) -->
+	<PropertyGroup>
+		<DeployFailOnBuildNotSet>false</DeployFailOnBuildNotSet>
+	</PropertyGroup>
+  
+  <!-- ## Uncomment to customize targets to customize test ##
 	<Target Name="Test" DependsOnTargets="TestWithNUnit"/>
 	<Target Name="Coverage" DependsOnTargets="OpenCoverWithNUnit"/>
 	<Target Name="CoverageReport" DependsOnTargets="OpenCoverReport"/>
