@@ -22,7 +22,6 @@ Install the package with the nuget package manager
 		platformProvider => platformProvider.CloseActionFor = (vm, views, result) => closeCalled = true,
 		x => x.DoOpenSelected());
 
-
 # Planned
 
 The following features are prototyped and will be implemented soon.

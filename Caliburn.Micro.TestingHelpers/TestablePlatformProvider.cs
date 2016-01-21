@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 
 namespace Caliburn.Micro.TestingHelpers
 {
-    [ExcludeFromCodeCoverage]
     public class TestablePlatformProvider : IPlatformProvider
     {
         public void BeginOnUIThread(Action action) { action(); }

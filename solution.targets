@@ -59,13 +59,11 @@
 	</PropertyGroup>
 	-->
 
-	<!-- ## Using NUnit 3:
+	<!-- ## Using NUnit 3:	-->
 	<PropertyGroup>
 		<UseNUnit3>true</UseNUnit3>
 		<NUnitResultFormat>nunit3</NUnitResultFormat>
 	</PropertyGroup>
-	-->
-
 
 	<!-- ## Uncomment	to override the default nuget server to push packages to in the 'Deploy' target
 	<PropertyGroup>

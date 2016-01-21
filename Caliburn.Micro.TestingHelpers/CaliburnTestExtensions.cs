@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Diagnostics.CodeAnalysis;
-using Caliburn.Micro;
 
 namespace Caliburn.Micro.TestingHelpers
 {
-    [ExcludeFromCodeCoverage]
     public static class CaliburnTestExtensions
     {
         public static void TestWithPlatformProvider<TSubject>(
